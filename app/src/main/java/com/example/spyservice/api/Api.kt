@@ -1,6 +1,9 @@
 package com.example.spyservice.api
 
 import com.example.spyservice.models.SystemInfo
+import retrofit2.Call
+import okhttp3.ResponseBody
+import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
@@ -10,5 +13,5 @@ import retrofit2.http.POST
 interface Api {
     @POST("/systemInfo")
     @Headers("Content-Type: application/json")
-    fun sendSystemInfo(@Body systemInfo: SystemInfo)
+    fun sendSystemInfo(@Body systemInfo: SystemInfo) : Call<ResponseBody>
 }

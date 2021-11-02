@@ -7,13 +7,6 @@ import com.example.spyservice.models.SystemInfo
 import android.content.pm.PackageManager
 import android.content.pm.ApplicationInfo
 import android.content.Context.ACTIVITY_SERVICE
-import android.app.ActivityManager.RunningTaskInfo
-import androidx.core.content.ContextCompat
-
-import androidx.core.content.ContextCompat.getSystemService
-
-
-
 
 object SpyUtils {
     fun getSystemInfo(context: Context): SystemInfo {

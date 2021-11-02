@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
                         getString(R.string.service_is_not_running)
                     }
                     else -> {
-                        getString(R.string.service_has_not_finished)
+                        //getString(R.string.service_has_not_finished)
+                        getString(R.string.service_is_not_running)
                     }
                 }
             }
